@@ -10,7 +10,7 @@
 </h1>
 <form method="post" action="{{ url('/todos') }}">
   {{ csrf_field() }}
-  <p class="mt-5">やりたい事
+  <p class="mt-5">やりたい事：
     <input type="text" name="title" placeholder="enter title" value="{{ old('title') }}">
     @if ($errors->has('title'))
     <span class="error">{{ $errors->first('title') }}</span>
