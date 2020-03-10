@@ -10,7 +10,7 @@ Todo lists
 @section('content')
 <h1>
   <a href="{{ url('/todos/create') }}" class="header-menu">New Todo</a>
-  Todo lists</h1>
+  Todo list</h1>
 <ul>
   @forelse ($todos as $todo)
   <li>
